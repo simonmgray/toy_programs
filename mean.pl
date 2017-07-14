@@ -14,3 +14,4 @@ for($i=0;$i<$l;$i++){
 
 $mean=$sum/$l;
 print($mean);
+

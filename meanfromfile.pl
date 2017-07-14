@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use warnings;
 
+#read file into the object MATRIX; for some reason the file to be opened must be in the home directory /Users/simongray -- not sure why, need to ask Alos
 $filename = 'numbers.txt';
 
 open(MATRIX, $filename) or die$!;
@@ -37,3 +38,5 @@ else{   #If the string of numbers is even, find the average of the middle two nu
     print $median;
     print "\n";
 }
+
+close MATRIX;
